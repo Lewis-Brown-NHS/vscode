@@ -47,8 +47,8 @@ code .\app\uninstall.ps1
 ```
 
 8. Prepare .vscode\build.ps1 logic
-9. Prepare .vscode\tasks.json
-10. Prepare .vscode\sandbox.ps1 logic
+9. Prepare .vscode\sandbox.ps1 logic
+10. Prepare .vscode\tasks.json
 
 ### Other interesting ideas.
 
