@@ -50,7 +50,7 @@ code .\app\uninstall.ps1
 9. Prepare .vscode\tasks.json
 10. Prepare .vscode\sandbox.ps1 logic
 
-###Other interesting ideas.
+### Other interesting ideas.
 
 - [Preload winget into the Sandbox base image](https://github.com/microsoft/winget-pkgs/discussions/56530) by [Trenly](https://github.com/Trenly)
 - [Automate the upload to Intune](https://github.com/FlorianSLZ/scloud/tree/main/intune-win32-deployment) by [FlorianSLZ](https://github.com/FlorianSLZ)
