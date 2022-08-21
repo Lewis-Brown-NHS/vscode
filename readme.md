@@ -46,9 +46,16 @@ code .\app\requirement.ps1
 code .\app\uninstall.ps1
 ```
 
-8. Prepare .vscode\build.ps1 logic
-9. Prepare .vscode\sandbox.ps1 logic
-10. Prepare .vscode\tasks.json
+8. Prepare devops.
+
+- [.vscode\Build.ps1](https://github.com/cgerke/vscode/edit/master/.vscode/Build.ps1)
+- [.vscode\Global.ps1](https://github.com/cgerke/vscode/edit/master/.vscode/Global.ps1)
+- [.vscode\LogonCommand.ps1](https://github.com/cgerke/vscode/edit/master/.vscode/LogonCommand.ps1)
+- [.vscode\Sandbox.ps1](https://github.com/cgerke/vscode/edit/master/.vscode/Sandbox.ps1)
+- [.vscode\tasks.json](https://github.com/cgerke/vscode/edit/master/.vscode/tasks.json)
+
+9. Speed up ops
+- [.vscode\Intune.code-snippets.json](https://github.com/cgerke/vscode/edit/master/.vscode/Intune.code-snippets.json)
 
 ### Other interesting ideas.
 
