@@ -1,6 +1,9 @@
 # Vars
 . ".vscode\Global.ps1"
 
+# Copy Resources
+Copy-Item -Path ".vscode\Sandbox.ps1" -Destination "$env:ProgramData\win32app\" -Recurse -Force -Verbose -ErrorAction Ignore
+
 # Prepare Sandbox
 @"
 <Configuration>
