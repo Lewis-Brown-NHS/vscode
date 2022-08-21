@@ -2,7 +2,7 @@
 . ".vscode\Global.ps1"
 
 # Copy Resources
-Copy-Item -Path ".vscode\Sandbox.ps1" -Destination "$env:ProgramData\win32app\" -Recurse -Force -Verbose -ErrorAction Ignore
+Copy-Item -Path ".vscode\$LogonCommand" -Destination "$env:ProgramData\win32app\" -Recurse -Force -Verbose -ErrorAction Ignore
 
 # Prepare Sandbox
 @"
@@ -16,7 +16,7 @@ Copy-Item -Path ".vscode\Sandbox.ps1" -Destination "$env:ProgramData\win32app\" 
     </MappedFolder>
 </MappedFolders>
 <LogonCommand>
-    <Command>powershell -executionpolicy unrestricted -command "Start-Process powershell -ArgumentList ""-nologo -file $WDADesktop\Sandbox.ps1"""</Command>
+    <Command>powershell -executionpolicy unrestricted -command "Start-Process powershell -ArgumentList ""-nologo -file $WDADesktop\$LogonCommand"""</Command>
 </LogonCommand>
 </Configuration>
 "@ | Out-File "$env:ProgramData\win32app\$Application.wsb"
