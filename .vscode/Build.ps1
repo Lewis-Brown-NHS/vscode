@@ -7,7 +7,7 @@
 # Cache resources
 Remove-Item -Path "$Cache" -Recurse -Force -ErrorAction Ignore
 Copy-Item -Path "App" -Destination "$Cache" -Recurse -Force -Verbose -ErrorAction Ignore
-Copy-Item -Path ".vscode\sandbox.ps1" -Destination "$env:ProgramData\win32app\" -Recurse -Force -Verbose -ErrorAction Ignore
+Copy-Item -Path ".vscode\Sandbox.ps1" -Destination "$env:ProgramData\win32app\" -Recurse -Force -Verbose -ErrorAction Ignore
 explorer "$Cache"
 
 # intunewin
@@ -44,7 +44,7 @@ explorer $Desktop
     </MappedFolder>
 </MappedFolders>
 <LogonCommand>
-    <Command>powershell -executionpolicy unrestricted -command "Start-Process powershell -ArgumentList ""-nologo -file $WDADesktop\sandbox.ps1"""</Command>
+    <Command>powershell -executionpolicy unrestricted -command "Start-Process powershell -ArgumentList ""-nologo -file $WDADesktop\Sandbox.ps1"""</Command>
 </LogonCommand>
 </Configuration>
 "@ | Out-File "$env:ProgramData\win32app\$Application.wsb"
