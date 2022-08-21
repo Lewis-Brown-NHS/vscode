@@ -1,14 +1,5 @@
 # Vars
-[string]$Desktop = [Environment]::GetFolderPath('DesktopDirectory')
-[string]$WDADesktop = "C:\Users\WDAGUtilityAccount\Desktop"
-[string]$Application = "$(& git branch --show-current)"
-[string]$Cache = "$env:ProgramData\win32app\$Application"
-
-# Cache resources
-Remove-Item -Path "$Cache" -Recurse -Force -ErrorAction Ignore
-Copy-Item -Path "App" -Destination "$Cache" -Recurse -Force -Verbose -ErrorAction Ignore
-Copy-Item -Path ".vscode\Sandbox.ps1" -Destination "$env:ProgramData\win32app\" -Recurse -Force -Verbose -ErrorAction Ignore
-explorer "$Cache"
+. ".vscode\Global.ps1"
 
 # intunewin
 [string]$Uri = "https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool/raw/master"
